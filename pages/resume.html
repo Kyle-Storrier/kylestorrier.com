@@ -1,0 +1,31 @@
+---
+layout: page
+title: Resume
+permalink: /resume/
+order: 4
+---
+<p id="email test"></p>
+<p>I can be contacted by email at: <a id="e addr">[first name].[lastname] [at] gmail [dot] com</a></p>
+<a href="{{ site.baseurl }}/images/Kyle-Storrier's-Resume.pdf"><p>Here is my resume</p>
+<img src="{{ site.baseurl}}/images/Kyle-Storrier's-Resume.jpg" alt="Kyle Storrier's Resume" style="height: 27.94cm; width: 21.59cm;">
+</a>
+<script>
+	/*//The encoding algorithm.
+	var mail = "";
+	var tmp = "";
+	for(i=0; i < mail.length; i++){
+		tmp = tmp + String.fromCharCode(mail.charCodeAt(i)+1);
+	}
+	document.getElementById("email test").innerHTML = tmp;
+	*/
+	
+	var results = "";
+	var tmp ="Lzmf/U/TupssjfsAhnbjm/dpn";
+
+	for(i=0; i < tmp.length; i++){
+		results = results + String.fromCharCode(tmp.charCodeAt(i)-1);
+	}
+	document.getElementById("e addr").innerHTML = results;
+    document.getElementById("e addr").setAttribute("href", "mailto:"+results);
+</script>
+
