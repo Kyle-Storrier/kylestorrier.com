@@ -92,7 +92,7 @@
         {% assign found = false %}
         {% for project in mypages%}
             {% if found == true %}
-                <a href="{{ project.url | absolute_url }}" style="float: left; margin-left: 20%; background-color: #f1f1f1; color: black; font-size: 140%" class="previousButton">&laquo; Previous</a>
+                <a href="{{ project.url | absolute_url }}" style="float: left; margin-left: 20%; background-color: #000099; color: white; font-size: 140%" class="previousButton">&laquo; Previous</a>
                 {% assign found = false %}
             {% endif %}
             {% if project.path == page.path %}
@@ -103,7 +103,7 @@
         {% assign found = false %}
         {% for project in mypages reversed%}
             {% if found == true %}
-                <a href="{{ project.url | absolute_url }}" style="float: right; margin-right: 20%; background-color: #4CAF50; color: white; font-size: 140%" id="next button"  class="nextButton">Next &raquo;</a>
+                <a href="{{ project.url | absolute_url }}" style="float: right; margin-right: 20%; background-color: #000099; color: white; font-size: 140%" id="next button"  class="nextButton">Next &raquo;</a>
                 {% assign found = false %}
             {% endif %}
             {% if project.path == page.path %}
